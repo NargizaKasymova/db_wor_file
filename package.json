@@ -13,5 +13,13 @@
     "nodemon": "^2.0.7"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NargizaKasymova/db_wor_file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NargizaKasymova/db_wor_file/issues"
+  },
+  "homepage": "https://github.com/NargizaKasymova/db_wor_file#readme",
   "description": ""
 }

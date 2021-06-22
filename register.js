@@ -45,7 +45,8 @@ exports.unregister = async function unregister(req, res) {
         return res.status(400).json('Вы пытаетесь удалить несуществующего пользователя')
     }
     users = users.filter(oneUser => oneUser.email !== req.params.email)
+
+    truncateSync('db-users.json')
+    writeFileSync('db-users.json', JSON.stringify(users))
     res.status(201).json('User was deleted')
-    console.log(users)
-   
 }
